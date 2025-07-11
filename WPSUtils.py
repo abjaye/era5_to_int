@@ -14,9 +14,12 @@ class Projections( Enum ) :
   ROTLL        = 203
 
 class IntermediateFile( object ):
-  def __init__( self, prefix, datestr ) :
+  #def __init__( self, prefix, datestr ) :
+  def __init__( self, prefix, datestr ,ens ) :
     self.prefix_ = prefix
     self.datestr_ = datestr
+    #self.ens_ = ens
+    #self.filename_ = self.prefix_.strip() + "_" + self.ens_.strip() + ":" + self.datestr_.strip()
     self.filename_ = self.prefix_.strip() + ":" + self.datestr_.strip()
     self.file_ = open( self.filename_, "wb" )
 
