@@ -354,8 +354,8 @@ def find_era5_file(var, validtime, localpaths=None):
     file_date = yyyy * 10000 + mm * 100 + dd
     #pl_filename = "ERA5_pl_20120528.nc"
     #sfc_filename = "ERA5_sfc_20120528.nc"
-    pl_filename = "ERA5_pl_"+str(file_date)+".nc"
-    sfc_filename = "ERA5_sfc_"+str(file_date)+".nc"
+    pl_filename = "pl/ERA5_pl_"+str(file_date)+".nc"
+    sfc_filename = "sfc/ERA5_sfc_"+str(file_date)+".nc"
 
     for p in file_paths:
         #if var.isInvariant or localpaths != None:
@@ -514,8 +514,8 @@ if __name__ == '__main__':
     #pl_filename = "ERA5_pl_20120528.nc"
     #sfc_filename = "ERA5_sfc_20120528.nc"
     file_date = yyyy * 10000 + mm * 100 + dd
-    pl_filename = "ERA5_pl_"+str(file_date)+".nc"
-    sfc_filename = "ERA5_sfc_"+str(file_date)+".nc"
+    pl_filename = "pl/ERA5_pl_"+str(file_date)+".nc"
+    sfc_filename = "sfc/ERA5_sfc_"+str(file_date)+".nc"
     z_dir = "/glade/campaign/collections/rda/data/d633006/e5.oper.invariant/"
 
     int_vars = []
